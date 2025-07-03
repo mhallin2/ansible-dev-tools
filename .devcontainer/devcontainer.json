@@ -41,10 +41,9 @@
         "VisualStudioExptTeam.intellicode-api-usage-examples",
         "ms-python.mypy-type-checker",
         "esbenp.prettier-vscode",
-        "ms-python.pylint",
-        "markis.code-coverage",
-        "Gruntfuggly.triggertaskonsave"
+        "ms-python.pylint"
       ]
+
     }
   }
 }
