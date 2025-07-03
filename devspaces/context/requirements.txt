@@ -1,2 +1,45 @@
 kubernetes==29.0.0
 molecule-plugins[podman]==23.5.3
+# ## Azure dependency ##
+
+# ## infoblox dependency ##
+
+infoblox-client
+#iputils
+# ## community.general dependency ##
+ipaddress
+dnspython
+jmespath
+
+# ## CA certs  dependency ##
+certifi>=2025.6.15
+
+# ## ansible.utils.ipaddr dependency ##
+netaddr
+
+# ## community.general.ldap* dependency ##
+python-ldap
+ldap3
+
+# ## General Addons##
+ansible-lint
+pgpy
+
+# ## community.general.mssql_script dependency ##
+pymssql
+pyodbc
+# required by hosting.common.create_yopass_link
+yopass-api
+
+# ## VMware dependency ##
+pyvmomi==8.0.3.0.1
+vmware-vcenter
+vmware-vapi-common-client
+
+#ansible.windows
+pywinrm>=0.4.0
+pykerberos
+
+#required by dellemc.unity
+urllib3
+storops
