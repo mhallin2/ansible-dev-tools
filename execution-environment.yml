@@ -20,3 +20,5 @@ options:
 additional_build_steps:
   prepend_base:
     - RUN $PKGMGR -y -q install python3-devel
+    - RUN git config --global user.name mhallin2
+    - RUN git config --global user.email mhallin2@volvocars.com
