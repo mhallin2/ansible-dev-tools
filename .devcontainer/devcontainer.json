@@ -55,6 +55,7 @@
       ]
 
     }
-  }
+  },
+  "postCreateCommand": "bash scripts/install-dependencies.sh"
 }
 
