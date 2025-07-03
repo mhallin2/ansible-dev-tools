@@ -56,6 +56,6 @@
 
     }
   },
-  "postCreateCommand": "bash scripts/install-dependencies.sh"
+  "postCreateCommand": "bash -i scripts/install-dependencies.sh"
 }
 
