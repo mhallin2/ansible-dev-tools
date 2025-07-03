@@ -1,0 +1,22 @@
+[galaxy]
+server_list = vcc, aap, community, galaxy
+
+[galaxy_server.vcc]
+url=https://hub.aapbmylc6irzyfx6.ansiblecloud.redhat.com/api/galaxy/content/vcc/
+token={{Hub_token}}
+[galaxy_server.aap]
+url=https://hub.aapbmylc6irzyfx6.ansiblecloud.redhat.com/api/galaxy/content/rh-certified/
+token={{Hub_token}}
+
+[galaxy_server.community]
+url=https://hub.aapbmylc6irzyfx6.ansiblecloud.redhat.com/api/galaxy/content/community/
+token={{Hub_token}}
+
+[galaxy_server.galaxy]
+url=https://galaxy.ansible.com/api/
+
+
+
+
+#ask_vault_pass = True
+# vault_password_file = /home/iacdev/github/mhallin2/vault.yml
