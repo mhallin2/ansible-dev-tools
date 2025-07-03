@@ -1,7 +1,6 @@
 {
   "recommendations": [
     "esbenp.prettier-vscode",
-    "gruntfuggly.triggertaskonsave",
     "markis.code-coverage",
     "ms-python.debugpy",
     "ms-python.mypy-type-checker",

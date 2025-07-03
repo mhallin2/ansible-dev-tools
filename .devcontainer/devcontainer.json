@@ -41,7 +41,17 @@
         "VisualStudioExptTeam.intellicode-api-usage-examples",
         "ms-python.mypy-type-checker",
         "esbenp.prettier-vscode",
-        "ms-python.pylint"
+        "ms-python.pylint",
+        "esbenp.prettier-vscode",
+        "markis.code-coverage",
+        "ms-python.debugpy",
+        "ms-python.mypy-type-checker",
+        "ms-python.pylint",
+        "ms-python.python",
+        "redhat.vscode-openshift-connector",
+        "sonarsource.sonarlint-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "timonwong.shellcheck"
       ]
 
     }
