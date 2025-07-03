@@ -11,7 +11,39 @@
   "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
-      "extensions": ["redhat.ansible"]
+      "extensions": [
+        "redhat.ansible",
+        "GitHub.copilot",
+        "IkBenGeenRobot.ansible-variable-lookup",
+        "mikoz.black-py",
+        "ms-python.black-formatter",
+        "formulahendry.code-runner",
+        "freakypie.code-python-isort",
+        "lextudio.restructuredtext-pack",
+        "waderyan.gitblame",
+        "donjayamanne.githistory",
+        "apsislabs.mergetool-navigator",
+        "shyykoserhiy.git-autoconfig",
+        "github.vscode-github-actions",
+        "GitHub.codespaces",
+        "erichbehrens.pull-request-monitor",
+        "GitHub.remotehub",
+        "eamodio.gitlens",
+        "ms-python.isort",
+        "valentjn.vscode-ltex",
+        "DavidAnson.vscode-markdownlint",
+        "mechatroner.rainbow-csv",
+        "unjinjang.rest-api-client",
+        "trond-snekvik.simple-rst",
+        "tht13.rst-vscode",
+        "tomblind.scm-buttons-vscode",
+        "oderwat.indent-rainbow",
+        "VisualStudioExptTeam.intellicode-api-usage-examples",
+        "ms-python.mypy-type-checker",
+        "esbenp.prettier-vscode",
+        "ms-python.pylint"
+      ]
     }
   }
 }
+
