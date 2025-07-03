@@ -45,3 +45,7 @@ chmod +x /usr/bin/podman.wrapper
 
 # shellcheck disable=SC1091
 source "$DIR/setup-image.sh"
+
+
+git config --global user.name mhallin2
+git config --global user.email mhallin2@volvocars.com
