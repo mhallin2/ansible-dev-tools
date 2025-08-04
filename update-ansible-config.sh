@@ -10,7 +10,7 @@ readonly Config_File_Path="/workspaces/ansible-dev-tools/scripts/ansible.cfg"
 readonly Keyvault_Name="kv-weu-wintel-prod"
 readonly Secret_Name="APIkey-Private-AAP-HUB"
 readonly Secret_Version="6024959f4bec42c4a2500bc31317116d"
-readonly Token_Placeholder="{{Hub_token}}"
+readonly Token_Placeholder="Hub_Token"
 
 # Color codes for output
 readonly RED='\033[0;31m'
@@ -54,15 +54,15 @@ validate_prerequisites() {
 fetch_keyvault_secret() {
     print_status "$YELLOW" "🔐 Fetching AAP Hub token from Azure Key Vault..."
 
-    local hub_token
-    hub_token=$(az keyvault secret show \
+
+    AAP_hub_token=$(az keyvault secret show \
         --vault-name "$Keyvault_Name" \
         --name "$Secret_Name" \
         --version "$Secret_Version" \
         --query "value" \
         --output tsv 2>/dev/null)
 
-    if [[ -z "$hub_token" ]]; then
+    if [[ -z "$AAP_hub_token" ]]; then
         print_status "$RED" "❌ Failed to fetch secret from Azure Key Vault"
         print_status "$RED" "   Vault: https://${Keyvault_Name}.vault.azure.net/"
         print_status "$RED" "   Secret: ${Secret_Name}"
@@ -71,12 +71,12 @@ fetch_keyvault_secret() {
     fi
 
     print_status "$GREEN" "✅ Successfully retrieved AAP Hub token from Azure Key Vault"
-    echo "$hub_token"
+    echo "$AAP_hub_token"
 }
 
 # Function to update ansible.cfg with the token
 update_ansible_config() {
-    local hub_token=$1
+    local Lhub_token=$1
 
     print_status "$YELLOW" "📝 Updating ansible.cfg with AAP Hub token..."
 
@@ -87,7 +87,10 @@ update_ansible_config() {
     print_status "$GREEN" "📋 Backup created: $backup_file"
 
     # Replace token placeholder with actual token
-    if sed -i "s|${Token_Placeholder}|${hub_token}|g" "$Config_File_Path"; then
+    print_status "$GREEN" "✅ Starting update of ansible.cfg with AAP Hub token"
+    echo "TEST $Lhub_token"
+    echo "$AAP_hub_token"
+    if sed -i "s/Hub_Token/$Lhub_token/g" "$Config_File_Path"; then
         print_status "$GREEN" "✅ Successfully updated ansible.cfg with AAP Hub token"
     else
         print_status "$RED" "❌ Failed to update ansible.cfg"
@@ -129,11 +132,13 @@ main() {
     validate_prerequisites
     echo
 
-    local hub_token
-    hub_token=$(fetch_keyvault_secret)
+    #local hub_token1
+    AAP_hub_token="dd"
+    hub_token1=$(fetch_keyvault_secret)
+
     echo
 
-    update_ansible_config "$hub_token"
+    update_ansible_config "$hub_token1"
     echo
 
     verify_update
