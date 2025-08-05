@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "../../github/mhallin2/Hosting-Ansible-Collections"
+		},
+		{
+			"path": "../../github/mhallin2/Hosting-Ansible-Playbooks"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"githubPullRequests.ignoredPullRequestBranches": [
+			"staging"
+		]
+	}
+}
