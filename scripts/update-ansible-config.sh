@@ -6,7 +6,9 @@
 set -euo pipefail
 
 # Configuration variables following project PascalCase standards
-readonly Config_File_Path="/workspaces/ansible-dev-tools/scripts/ansible.cfg"
+readonly Config_File_Source_Path="/workspaces/ansible-dev-tools/scripts/ansible.cfg"
+#readonly Config_File_Destination_Path="/workspaces/ansible-dev-tools/ansible.cfg"
+readonly Config_File_Destination_Path="/etc/ansible/ansible.cfg"
 readonly Keyvault_Name="kv-weu-wintel-prod"
 readonly Secret_Name="APIkey-Private-AAP-HUB"
 readonly Secret_Version="6024959f4bec42c4a2500bc31317116d"
@@ -42,8 +44,8 @@ validate_prerequisites() {
     fi
 
     # Check if ansible.cfg file exists
-    if [[ ! -f "$Config_File_Path" ]]; then
-        print_status "$RED" "❌ Ansible config file not found: $Config_File_Path"
+    if [[ ! -f "$Config_File_Source_Path" ]]; then
+        print_status "$RED" "❌ Ansible config file not found: $Config_File_Source_Path"
         exit 1
     fi
 
@@ -52,17 +54,17 @@ validate_prerequisites() {
 
 # Function to fetch secret from Azure Key Vault
 fetch_keyvault_secret() {
-    print_status "$YELLOW" "🔐 Fetching AAP Hub token from Azure Key Vault..."
+   # print_status "$YELLOW" "🔐 Fetching AAP Hub token from Azure Key Vault..."
 
 
-    AAP_hub_token=$(az keyvault secret show \
+    AAP_Hub_Token=$(az keyvault secret show \
         --vault-name "$Keyvault_Name" \
         --name "$Secret_Name" \
         --version "$Secret_Version" \
         --query "value" \
         --output tsv 2>/dev/null)
 
-    if [[ -z "$AAP_hub_token" ]]; then
+    if [[ -z "$AAP_Hub_Token" ]]; then
         print_status "$RED" "❌ Failed to fetch secret from Azure Key Vault"
         print_status "$RED" "   Vault: https://${Keyvault_Name}.vault.azure.net/"
         print_status "$RED" "   Secret: ${Secret_Name}"
@@ -70,35 +72,27 @@ fetch_keyvault_secret() {
         exit 1
     fi
 
-    print_status "$GREEN" "✅ Successfully retrieved AAP Hub token from Azure Key Vault"
-    echo "$AAP_hub_token"
+    #print_status "$GREEN" "✅ Successfully retrieved AAP Hub token from Azure Key Vault"
+    echo "$AAP_Hub_Token"
 }
 
 # Function to update ansible.cfg with the token
 update_ansible_config() {
-    local Lhub_token=$1
+    local AAP_Hub_Token=$1
 
     print_status "$YELLOW" "📝 Updating ansible.cfg with AAP Hub token..."
-
-    # Create backup of original file
-    local backup_file
-    backup_file="${Config_File_Path}.backup.$(date +%Y%m%d_%H%M%S)"
-    cp "$Config_File_Path" "$backup_file"
-    print_status "$GREEN" "📋 Backup created: $backup_file"
-
     # Replace token placeholder with actual token
     print_status "$GREEN" "✅ Starting update of ansible.cfg with AAP Hub token"
-    echo "TEST $Lhub_token"
-    echo "$AAP_hub_token"
-    if sed -i "s/Hub_Token/$Lhub_token/g" "$Config_File_Path"; then
-        print_status "$GREEN" "✅ Successfully updated ansible.cfg with AAP Hub token"
-    else
-        print_status "$RED" "❌ Failed to update ansible.cfg"
-        # Restore backup
-        cp "$backup_file" "$Config_File_Path"
-        print_status "$YELLOW" "🔄 Restored original configuration from backup"
-        exit 1
-    fi
+    sed -e "s/$Token_Placeholder/$AAP_Hub_Token/;w $Config_File_Destination_Path" "$Config_File_Source_Path"
+    # if sed -i "s/Hub_Token/$AAP_Hub_Token/g" "$Config_File_Source_Path"; then
+    #     print_status "$GREEN" "✅ Successfully updated ansible.cfg with AAP Hub token"
+    # else
+    #     print_status "$RED" "❌ Failed to update ansible.cfg"
+    #     # Restore backup
+    #     cp "$backup_file" "$Config_File_Source_Path"
+    #     print_status "$YELLOW" "🔄 Restored original configuration from backup"
+    #     exit 1
+    # fi
 }
 
 # Function to verify the update
@@ -106,14 +100,14 @@ verify_update() {
     print_status "$YELLOW" "🔍 Verifying configuration update..."
 
     # Check if placeholder still exists (should not)
-    if grep -q "$Token_Placeholder" "$Config_File_Path"; then
+    if grep -q "$Token_Placeholder" "$Config_File_Destination_Path"; then
         print_status "$RED" "❌ Token placeholder still found in configuration file"
         exit 1
     fi
 
     # Check if token lines exist (should have actual tokens now)
     local token_count
-    token_count=$(grep -c "^token=" "$Config_File_Path" || true)
+    token_count=$(grep -c "^token=" "$Config_File_Destination_Path" || true)
 
     if [[ "$token_count" -eq 0 ]]; then
         print_status "$RED" "❌ No token configurations found in ansible.cfg"
@@ -132,20 +126,19 @@ main() {
     validate_prerequisites
     echo
 
-    #local hub_token1
-    AAP_hub_token="dd"
-    hub_token1=$(fetch_keyvault_secret)
+    local AAP_Hub_Token
+    AAP_Hub_Token=$(fetch_keyvault_secret)
 
     echo
 
-    update_ansible_config "$hub_token1"
+    update_ansible_config "$AAP_Hub_Token"
     echo
 
     verify_update
     echo
 
     print_status "$GREEN" "🎉 Ansible configuration successfully updated with AAP Hub token!"
-    print_status "$GREEN" "📁 Configuration file: $Config_File_Path"
+    print_status "$GREEN" "📁 Configuration file: $Config_File_Source_Path"
     print_status "$GREEN" "🔗 All galaxy server configurations now have valid tokens"
 }
 
