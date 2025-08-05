@@ -6,7 +6,7 @@ ansible-galaxy collection install azure.azcollection
 pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt --no-input
 # curl -fsSL https://aka.ms/install-azd.sh | bash
 # azd auth login
-dnf install azure-cli
+dnf install azure-cli -y
 az config set core.login_experience_v2=off
 az login
 #git clone https://github.com/mhallin2/Hosting-Ansible-Playbooks /workspaces/github/mhallin2/Hosting-Ansible-Playbooks
