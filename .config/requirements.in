@@ -9,3 +9,5 @@ molecule>=25.3.0
 pytest-ansible
 setuptools
 tox-ansible
+pywinrm
+dnspython

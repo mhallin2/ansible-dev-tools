@@ -3,3 +3,18 @@ oniguruma-devel [test platform:rpm]
 libonig-dev [test platform:dpkg]
 sshpass
 ping
+krb5-libs [platform:rpm]
+krb5-workstation [platform:rpm]
+krb5-devel [platform:rpm compile]
+crypto-policies-scripts [platform:rpm]
+libxml2-devel
+gcc
+systemd-devel
+dnf
+openldap-devel
+nmap-ncat
+net-tools
+initscripts
+unixODBC-devel
+sudo
+
