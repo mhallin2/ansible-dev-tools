@@ -13,6 +13,9 @@
 	"settings": {
 		"githubPullRequests.ignoredPullRequestBranches": [
 			"staging"
+		],
+		"cSpell.words": [
+			"osgpo"
 		]
 	}
 }
