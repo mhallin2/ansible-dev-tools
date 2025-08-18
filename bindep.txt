@@ -6,6 +6,7 @@ ping
 krb5-libs [platform:rpm]
 krb5-workstation [platform:rpm]
 krb5-devel [platform:rpm compile]
+python-kerberos
 crypto-policies-scripts [platform:rpm]
 libxml2-devel
 gcc
