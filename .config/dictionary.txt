@@ -1,4 +1,3 @@
-KUBEDOCK
 accesslog
 addinivalue
 addoption
@@ -13,12 +12,14 @@ codespaces
 collectonly
 confest
 containerfile
+dellemc
 devcontainer
 devel
 devfile
 devspaces
 endgroup
 gunicorn
+KUBEDOCK
 libera
 libonig
 microdnf
