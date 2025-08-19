@@ -13,4 +13,5 @@ git clone https://github.com/mhallin2/Hosting-Ansible-Playbooks /workspaces/gith
 git clone https://github.com/mhallin2/Hosting-Ansible-Collections /workspaces/github/mhallin2/Hosting-Ansible-Collections
 /bin/bash "/workspaces/ansible-dev-tools/scripts/update-ansible-config.sh"
 ansible-galaxy collection install -r /workspaces/github/mhallin2/Hosting-Ansible-Playbooks/requirements.yml
+ansible-galaxy collection install /workspaces/github/mhallin2/Hosting-Ansible-Playbooks/collections/hosting_internal
 
