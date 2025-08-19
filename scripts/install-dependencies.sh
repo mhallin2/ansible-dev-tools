@@ -8,7 +8,7 @@ pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/re
 # azd auth login
 dnf install azure-cli -y
 az config set core.login_experience_v2=off
-az login -y
+az login
 git clone https://github.com/mhallin2/Hosting-Ansible-Playbooks /workspaces/github/mhallin2/Hosting-Ansible-Playbooks
 git clone https://github.com/mhallin2/Hosting-Ansible-Collections /workspaces/github/mhallin2/Hosting-Ansible-Collections
 /bin/bash "/workspaces/ansible-dev-tools/scripts/update-ansible-config.sh"
