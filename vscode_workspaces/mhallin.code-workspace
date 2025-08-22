@@ -16,6 +16,14 @@
 		],
 		"cSpell.words": [
 			"osgpo"
-		]
+		],
+		"cSpell.customDictionaries": {
+			"custom-dictionary-workspace": {
+				"name": "custom-dictionary-workspace",
+				"path": "${workspaceFolder:Hosting-Ansible-Collections}/.cspell/custom-dictionary-workspace.txt",
+				"addWords": true,
+				"scope": "workspace"
+			}
+		}
 	}
 }
