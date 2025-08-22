@@ -1,9 +1,14 @@
+# Update resolv.conf
+echo "nameserver 10.244.0.15\nnameserver 10.244.0.20" > /etc/resolv.conf
+dnf install $(cat /workspaces/ansible-dev-tools/bindep.txt) -y
+
 #!/usr/bin/env bash
 git config --global user.name mhallin2
 git config --global user.email mhallin2@volvocars.com
 mkdir -p /workspaces/github/mhallin2
 ansible-galaxy collection install azure.azcollection
 pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt --no-input
+pip install -r /workspaces/ansible-dev-tools/scripts/requirements.txt
 # curl -fsSL https://aka.ms/install-azd.sh | bash
 # azd auth login
 dnf install azure-cli -y

@@ -1,0 +1,41 @@
+# ## Azure dependency ##
+
+# ## infoblox dependency ##
+
+infoblox-client
+#iputils
+# ## community.general dependency ##
+ipaddress
+dnspython
+jmespath
+
+# ## ansible.utils.ipaddr dependency ##
+netaddr
+
+# ## community.general.ldap* dependency ##
+python-ldap
+ldap3
+
+# ## General Addons##
+ansible-lint
+pgpy
+
+# ## community.general.mssql_script dependency ##
+pymssql
+pyodbc
+
+# required by hosting.common.create_yopass_link
+yopass-api
+
+# ## VMware dependency ##
+pyvmomi
+vmware-vcenter
+vmware-vapi-common-client
+
+#ansible.windows
+pywinrm>=0.4.0
+pykerberos
+
+#required by dellemc.unity
+urllib3
+storops
