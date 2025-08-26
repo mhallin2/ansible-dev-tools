@@ -47,7 +47,6 @@
         "ms-python.mypy-type-checker",
         "ms-python.pylint",
         "ms-python.python",
-        "redhat.vscode-openshift-connector",
         "streetsidesoftware.code-spell-checker",
         "timonwong.shellcheck"
       ]

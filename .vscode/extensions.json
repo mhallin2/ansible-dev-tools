@@ -7,7 +7,6 @@
     "ms-python.pylint",
     "ms-python.python",
     "redhat.ansible",
-    "redhat.vscode-openshift-connector",
     "streetsidesoftware.code-spell-checker",
     "timonwong.shellcheck"
   ]
