@@ -8,6 +8,10 @@
 		},
 		{
 			"path": ".."
+		},
+		{
+			"name": "Hosting-Ansible-EE",
+			"path": "../../../root/Hosting-Ansible-EE"
 		}
 	],
 	"settings": {
