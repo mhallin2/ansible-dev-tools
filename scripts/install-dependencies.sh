@@ -8,6 +8,7 @@ git config --global user.email mhallin2@volvocars.com
 mkdir -p /workspaces/github/mhallin2
 ansible-galaxy collection install azure.azcollection
 pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt --no-input
+pip install -r ~/.ansible/collections/ansible_collections/vmware/vmware/requirements.txt --no-input
 pip install -r /workspaces/ansible-dev-tools/scripts/requirements.txt
 # curl -fsSL https://aka.ms/install-azd.sh | bash
 # azd auth login
