@@ -8,7 +8,6 @@ git config --global user.email mhallin2@volvocars.com
 mkdir -p /workspaces/github/mhallin2
 ansible-galaxy collection install azure.azcollection
 pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt --no-input
-pip install -r ~/.ansible/collections/ansible_collections/vmware/vmware/requirements.txt --no-input
 pip install -r /workspaces/ansible-dev-tools/scripts/requirements.txt
 # curl -fsSL https://aka.ms/install-azd.sh | bash
 # azd auth login
@@ -20,4 +19,5 @@ git clone https://github.com/mhallin2/Hosting-Ansible-Collections /workspaces/gi
 /bin/bash "/workspaces/ansible-dev-tools/scripts/update-ansible-config.sh"
 ansible-galaxy collection install -r /workspaces/github/mhallin2/Hosting-Ansible-Playbooks/requirements.yml
 ansible-galaxy collection install /workspaces/github/mhallin2/Hosting-Ansible-Playbooks/collections/hosting_internal
+pip install -r ~/.ansible/collections/ansible_collections/vmware/vmware/requirements.txt --no-input
 
