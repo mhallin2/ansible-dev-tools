@@ -28,6 +28,7 @@
 				"addWords": true,
 				"scope": "workspace"
 			}
-		}
+		},
+		"ansible.python.interpreterPath": "/usr/bin/python"
 	}
 }
