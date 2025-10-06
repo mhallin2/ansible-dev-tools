@@ -10,8 +10,7 @@
 			"path": ".."
 		},
 		{
-			"name": "Hosting-Ansible-EE",
-			"path": "../../../root/Hosting-Ansible-EE"
+			"path": "../../github/mhallin2/Hosting-Ansible-EE"
 		}
 	],
 	"settings": {
