@@ -16,7 +16,9 @@ az config set core.login_experience_v2=off
 az login
 git clone https://github.com/mhallin2/Hosting-Ansible-Playbooks /workspaces/github/mhallin2/Hosting-Ansible-Playbooks
 git clone https://github.com/mhallin2/Hosting-Ansible-Collections /workspaces/github/mhallin2/Hosting-Ansible-Collections
+git clone https://github.com/mhallin2/Hosting-Database-Playbooks.git /workspaces/github/mhallin2/Hosting-Database-Playbooks
 git clone https://github.com/mhallin2/Hosting-Ansible-EE.git /workspaces/github/mhallin2/Hosting-Ansible-EE
+
 /bin/bash "/workspaces/ansible-dev-tools/scripts/update-ansible-config.sh"
 ansible-galaxy collection install -r /workspaces/github/mhallin2/Hosting-Ansible-Playbooks/requirements.yml
 ansible-galaxy collection install /workspaces/github/mhallin2/Hosting-Ansible-Playbooks/collections/hosting_internal

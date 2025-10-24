@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../../github/mhallin2/Hosting-Ansible-EE"
+		},
+		{
+			"path": "../../github/mhallin2/Hosting-Database-Playbooks"
 		}
 	],
 	"settings": {
