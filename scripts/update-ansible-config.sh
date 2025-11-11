@@ -11,7 +11,7 @@ readonly Config_File_Source_Path="/workspaces/ansible-dev-tools/scripts/ansible.
 readonly Config_File_Destination_Path="/etc/ansible/ansible.cfg"
 readonly Keyvault_Name="kv-weu-wintel-prod"
 readonly Secret_Name="APIkey-Private-AAP-HUB"
-readonly Secret_Version="6024959f4bec42c4a2500bc31317116d"
+readonly Secret_Version="e2670c3195d44982a1a1609a7f8d8c8a"
 readonly Token_Placeholder="Hub_Token"
 
 # Color codes for output

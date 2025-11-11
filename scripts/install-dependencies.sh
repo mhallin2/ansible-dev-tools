@@ -1,5 +1,7 @@
+#!/bin/bash
 # Update resolv.conf
-echo "nameserver 10.244.0.15 \n nameserver 10.244.0.20" > /etc/resolv.conf
+cp /workspaces/ansible-dev-tools/scripts/resolv.conf /etc/resolv.conf
+
 dnf install $(cat /workspaces/ansible-dev-tools/bindep.txt) -y
 
 #!/usr/bin/env bash
