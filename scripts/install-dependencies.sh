@@ -1,7 +1,8 @@
 #!/bin/bash
 # Update resolv.conf
+echo "🔄 Copying resolv.conf to /etc/resolv.conf..."
 cp /workspaces/ansible-dev-tools/scripts/resolv.conf /etc/resolv.conf
-WORKSPACE="/home/runner/github/ansible-dev-tools"
+WORKSPACE="/workspaces/ansible-dev-tools"
 # Update system and install dependencies
 echo "🔄 Updating system and installing dependencies..."
 dnf install $(cat $WORKSPACE/bindep.txt) -y
@@ -21,3 +22,5 @@ az login
 # Install/Configure user related settings and dependencies
 /bin/bash "$WORKSPACE/scripts/configure-git.sh"
 /bin/bash "$WORKSPACE/scripts/setup-extras.sh"
+
+echo "✅ All dependencies have been installed and configured successfully!"
