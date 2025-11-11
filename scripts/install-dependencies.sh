@@ -1,28 +1,23 @@
 #!/bin/bash
 # Update resolv.conf
 cp /workspaces/ansible-dev-tools/scripts/resolv.conf /etc/resolv.conf
+WORKSPACE="/home/runner/github/ansible-dev-tools"
+# Update system and install dependencies
+echo "🔄 Updating system and installing dependencies..."
+dnf install $(cat $WORKSPACE/bindep.txt) -y
 
-dnf install $(cat /workspaces/ansible-dev-tools/bindep.txt) -y
-
-#!/usr/bin/env bash
-git config --global user.name mhallin2
-git config --global user.email mhallin2@volvocars.com
-mkdir -p /workspaces/github/mhallin2
+# Install Ansible Collections and Python packages
 ansible-galaxy collection install azure.azcollection
 pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt --no-input
-pip install -r /workspaces/ansible-dev-tools/scripts/requirements.txt
-# curl -fsSL https://aka.ms/install-azd.sh | bash
-# azd auth login
-dnf install azure-cli -y
+pip install -r $WORKSPACE/scripts/requirements.txt
+
+# Install Azure CLI via pip to get the latest version
+pip install azure-cli --upgrade
+curl -fsSL https://aka.ms/install-azd.sh | bash
+azd auth login
 az config set core.login_experience_v2=off
 az login
-git clone https://github.com/mhallin2/Hosting-Ansible-Playbooks /workspaces/github/mhallin2/Hosting-Ansible-Playbooks
-git clone https://github.com/mhallin2/Hosting-Ansible-Collections /workspaces/github/mhallin2/Hosting-Ansible-Collections
-git clone https://github.com/mhallin2/Hosting-Database-Playbooks.git /workspaces/github/mhallin2/Hosting-Database-Playbooks
-git clone https://github.com/mhallin2/Hosting-Ansible-EE.git /workspaces/github/mhallin2/Hosting-Ansible-EE
 
-/bin/bash "/workspaces/ansible-dev-tools/scripts/update-ansible-config.sh"
-ansible-galaxy collection install -r /workspaces/github/mhallin2/Hosting-Ansible-Playbooks/requirements.yml
-ansible-galaxy collection install /workspaces/github/mhallin2/Hosting-Ansible-Playbooks/collections/hosting_internal
-pip install -r ~/.ansible/collections/ansible_collections/vmware/vmware/requirements.txt --no-input
-
+# Install/Configure user related settings and dependencies
+/bin/bash "$WORKSPACE/scripts/configure-git.sh"
+/bin/bash "$WORKSPACE/scripts/setup-extras.sh"
