@@ -51,7 +51,32 @@
         "ms-python.pylint",
         "ms-python.python",
         "streetsidesoftware.code-spell-checker",
-        "timonwong.shellcheck"
+        "chouzz.vscode-better-align",
+        "dzhavat.bracket-pair-toggler",
+        "bierner.github-markdown-preview",
+        "hashicorp.terraform",
+        "bierner.markdown-checkbox",
+        "bierner.markdown-emoji",
+        "bierner.markdown-footnotes",
+        "bierner.markdown-mermaid",
+        "bierner.markdown-preview-github-styles",
+        "migueltarga.ssh-control",
+        "charliermarsh.ruff",
+        "jakob101.relativepath",
+        "ue.alphabetical-sorter",
+        "gruntfuggly.triggertaskonsave",
+        "timonwong.shellcheck",
+        "foam-vscode.foam-vscode",
+        "yzhang.markdown-all-in-one",
+        "kortina.vscode-markdown-notes",
+        "tchayen.markdown-links",
+        "shd101wyy.markdown-preview-enhanced",
+        "4ops.terraform",
+        "gruntfuggly.todo-tree",
+        "hashicorp.terraform",
+        "mhutchie.git-graph",
+        "dionmunk.vscode-notes",
+        "rangav.vscode-thunder-client"
       ]
 
     }
