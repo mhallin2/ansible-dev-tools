@@ -75,10 +75,11 @@ clone_repository "https://github.com/$GITHUB_USER/Hosting-Database-Playbooks" "$
 clone_repository "https://github.com/$GITHUB_USER/Hosting-Ansible-EE" "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-EE"
 # Clone organization repositories
 echo "📥 Cloning Volvo Cars organization repositories..."
-# clone_repository "https://github.com/volvo-cars/Hosting-Database-Playbooks" "$WORKSPACE_BASE/volvo-cars/Hosting-Database-Playbooks"
+clone_repository "https://github.com/volvo-cars/Hosting-Database-Playbooks" "$WORKSPACE_BASE/volvo-cars/Hosting-Database-Playbooks"
 # clone_repository "https://github.com/volvo-cars/Hosting-Ansible-Actions" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-Actions"
 # clone_repository "https://github.com/volvo-cars/Hosting-Ansible-TestArea" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-TestArea"
-# clone_repository "https://github.com/volvo-cars/Hosting-Ansible-DummyRepo" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-DummyRepo"
+clone_repository "https://github.com/volvo-cars/Hosting-Ansible-Collections" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-Collections"
+clone_repository "https://github.com/volvo-cars/Hosting-Database-Playbooks" "$WORKSPACE_BASE/volvo-cars/Hosting-Database-Playbooks"
 
 # Update ansible configuration
 echo "⚙️ Updating Ansible configuration..."
