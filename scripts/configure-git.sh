@@ -80,6 +80,7 @@ clone_repository "https://github.com/volvo-cars/Hosting-Database-Playbooks" "$WO
 # clone_repository "https://github.com/volvo-cars/Hosting-Ansible-TestArea" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-TestArea"
 clone_repository "https://github.com/volvo-cars/Hosting-Ansible-Collections" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-Collections"
 clone_repository "https://github.com/volvo-cars/Hosting-Database-Playbooks" "$WORKSPACE_BASE/volvo-cars/Hosting-Database-Playbooks"
+clone_repository "https://github.com/volvo-cars/Hosting-Ansible-Playbooks" "$WORKSPACE_BASE/volvo-cars/Hosting-Ansible-Playbooks"
 
 # Update ansible configuration
 echo "⚙️ Updating Ansible configuration..."
