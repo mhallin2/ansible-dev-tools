@@ -1,19 +1,24 @@
 {
 	"folders": [
 		{
+			"name": "Hosting-Ansible-Collections",
 			"path": "../../github/mhallin2/Hosting-Ansible-Collections"
 		},
 		{
+			"name": "Hosting-Ansible-Playbooks",
 			"path": "../../github/mhallin2/Hosting-Ansible-Playbooks"
 		},
 		{
-			"path": ".."
-		},
-		{
+			"name": "Hosting-Ansible-EE",
 			"path": "../../github/mhallin2/Hosting-Ansible-EE"
 		},
 		{
+			"name": "Hosting-Database-Playbooks",
 			"path": "../../github/mhallin2/Hosting-Database-Playbooks"
+		},
+		{
+			"name": "ansible-dev-tools",
+			"path": ".."
 		}
 	],
 	"settings": {
