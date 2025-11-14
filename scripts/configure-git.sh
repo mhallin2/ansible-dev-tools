@@ -24,7 +24,7 @@
 GIT_USERNAME="${GIT_USERNAME:-mhallin2}"
 GIT_EMAIL="${GIT_EMAIL:-mhallin2@volvocars.com}"
 GITHUB_USER="${GITHUB_USER:-${GIT_USERNAME}}"
-WORKSPACE_BASE="${WORKSPACE_BASE:-/home/runner/github/}"
+WORKSPACE_BASE="${WORKSPACE_BASE:-/workspaces/github/}"
 
 # Validate required variables
 if [[ -z "$GIT_USERNAME" || -z "$GIT_EMAIL" ]]; then
