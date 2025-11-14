@@ -9,7 +9,7 @@
     "--hostname=ansible-dev-container"
   ],
   "mounts": [
-    "source=C:\\Workspace\\github,target=/workspaces/github/mhallin2,type=bind,consistency=consistent"
+    // "source=C:\\Workspace\\github,target=/workspaces/github/mhallin2,type=bind,consistency=consistent"
   ],
   "updateRemoteUserUID": true,
   "customizations": {
