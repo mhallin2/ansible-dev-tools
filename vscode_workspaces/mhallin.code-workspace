@@ -36,6 +36,12 @@
 				"scope": "workspace"
 			}
 		},
-		"ansible.python.interpreterPath": "/usr/bin/python"
+		"ansible.python.interpreterPath": "/usr/bin/python",
+		"pylint.path": [
+			"/root/.ansible/collections/"
+		],
+		"python.analysis.extraPaths": [
+			"/root/.ansible/collections/"
+		]
 	}
 }
