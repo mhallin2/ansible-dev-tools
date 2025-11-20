@@ -21,6 +21,10 @@ ldap3
 
 # ## General Addons##
 ansible-lint
+pylint
+black
+mypy
+pytest
 pgpy
 
 # ## community.general.mssql_script dependency ##
