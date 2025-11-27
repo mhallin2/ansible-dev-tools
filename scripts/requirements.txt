@@ -26,6 +26,7 @@ black
 mypy
 pytest
 pgpy
+types-PyYAML
 
 # ## community.general.mssql_script dependency ##
 pymssql
