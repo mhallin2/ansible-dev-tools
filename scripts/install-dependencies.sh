@@ -13,11 +13,11 @@ pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/re
 pip install -r $WORKSPACE/scripts/requirements.txt
 
 # Install Azure CLI via pip to get the latest version
-pip install azure-cli --upgrade
+#pip install azure-cli --upgrade
 curl -fsSL https://aka.ms/install-azd.sh | bash
-azd auth login --use-device-code
+# azd auth login
 az config set core.login_experience_v2=off
-# az login
+az login
 
 # Install/Configure user related settings and dependencies
 /bin/bash "$WORKSPACE/scripts/configure-git.sh"
