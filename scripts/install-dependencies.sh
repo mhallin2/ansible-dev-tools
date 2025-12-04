@@ -15,7 +15,7 @@ pip install -r $WORKSPACE/scripts/requirements.txt
 # Install Azure CLI via pip to get the latest version
 pip install azure-cli --upgrade
 curl -fsSL https://aka.ms/install-azd.sh | bash
-azd auth login
+azd auth login --use-device-code
 az config set core.login_experience_v2=off
 # az login
 
