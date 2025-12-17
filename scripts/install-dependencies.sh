@@ -5,7 +5,8 @@ cp /workspaces/ansible-dev-tools/scripts/resolv.conf /etc/resolv.conf
 WORKSPACE="/workspaces/ansible-dev-tools"
 # Update system and install dependencies
 echo "🔄 Updating system and installing dependencies..."
-dnf install $(cat $WORKSPACE/bindep.txt) -y
+yum upgrade -y
+yum install $(cat $WORKSPACE/bindep.txt) -y
 
 # Install Ansible Collections and Python packages
 ansible-galaxy collection install azure.azcollection==3.12.0 --collections-path /root/.ansible/collections/ansible_collections/
