@@ -8,8 +8,8 @@ echo "🔄 Updating system and installing dependencies..."
 dnf install $(cat $WORKSPACE/bindep.txt) -y
 
 # Install Ansible Collections and Python packages
-ansible-galaxy collection install azure.azcollection==3.12.0 --collections-path /usr/share/ansible/collections/ansible_collections
-pip3 install -r /usr/share/ansible/collections/ansible_collections/azure/azcollection/requirements.txt --no-input
+ansible-galaxy collection install azure.azcollection==3.12.0 --collections-path /root/.ansible/collections/ansible_collections/
+pip3 install -r /root/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt --no-input
 pip install -r $WORKSPACE/scripts/requirements.txt
 
 # Install Azure CLI via pip to get the latest version

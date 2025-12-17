@@ -93,7 +93,7 @@ ansible-galaxy collection install "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-
 
 # Install python requirements
 echo "🐍 Installing Python requirements..."
-pip install -r ~/.ansible/collections/ansible_collections/vmware/vmware/requirements.txt --no-input
+pip install -r /root/.ansible/collections/ansible_collections/vmware/vmware/requirements.txt --no-input
 
 echo "✅ Git configuration and repository setup completed successfully! 🎉"
 echo ""
