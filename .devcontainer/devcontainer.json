@@ -1,82 +1,17 @@
 {
-  "name": "ansible-dev-container-codespaces",
-  "image": "ghcr.io/ansible/community-ansible-dev-tools:latest",
   "containerUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": ["redhat.ansible"]
+    }
+  },
+  "image": "ghcr.io/ansible/community-ansible-dev-tools:latest",
+  "name": "ansible-dev-container-codespaces",
   "runArgs": [
     "--privileged",
     "--device",
     "/dev/fuse",
     "--hostname=ansible-dev-container"
   ],
-  // "mounts": [
-  //   "source=C:\\Workspace\\github\\localtests,target=/workspaces/github/mhallin2/Hosting-Ansible-Playbooks/.localtests,type=bind,consistency=consistent"
-  // ],
-  "updateRemoteUserUID": true,
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "redhat.ansible",
-        "GitHub.copilot",
-        "IkBenGeenRobot.ansible-variable-lookup",
-        "mikoz.black-py",
-        "ms-python.black-formatter",
-        "formulahendry.code-runner",
-        "freakypie.code-python-isort",
-        "waderyan.gitblame",
-        "donjayamanne.githistory",
-        "apsislabs.mergetool-navigator",
-        "shyykoserhiy.git-autoconfig",
-        "github.vscode-github-actions",
-        "GitHub.codespaces",
-        "erichbehrens.pull-request-monitor",
-        "GitHub.remotehub",
-        "eamodio.gitlens",
-        "ms-python.isort",
-        "valentjn.vscode-ltex",
-        "DavidAnson.vscode-markdownlint",
-        "mechatroner.rainbow-csv",
-        "unjinjang.rest-api-client",
-        "trond-snekvik.simple-rst",
-        "tht13.rst-vscode",
-        "tomblind.scm-buttons-vscode",
-        "oderwat.indent-rainbow",
-        "ms-python.mypy-type-checker",
-        "esbenp.prettier-vscode",
-        "ms-python.pylint",
-        "esbenp.prettier-vscode",
-        "markis.code-coverage",
-        "ms-python.debugpy",
-        "ms-python.mypy-type-checker",
-        "ms-python.pylint",
-        "ms-python.python",
-        "streetsidesoftware.code-spell-checker",
-        "chouzz.vscode-better-align",
-        "dzhavat.bracket-pair-toggler",
-        "bierner.github-markdown-preview",
-        "bierner.markdown-checkbox",
-        "bierner.markdown-emoji",
-        "bierner.markdown-footnotes",
-        "bierner.markdown-mermaid",
-        "bierner.markdown-preview-github-styles",
-        "migueltarga.ssh-control",
-        "charliermarsh.ruff",
-        "jakob101.relativepath",
-        "ue.alphabetical-sorter",
-        "gruntfuggly.triggertaskonsave",
-        "timonwong.shellcheck",
-        "foam-vscode.foam-vscode",
-        "yzhang.markdown-all-in-one",
-        "kortina.vscode-markdown-notes",
-        "tchayen.markdown-links",
-        "shd101wyy.markdown-preview-enhanced",
-        "gruntfuggly.todo-tree",
-        "mhutchie.git-graph",
-        "dionmunk.vscode-notes",
-        "rangav.vscode-thunder-client"
-      ]
-
-    }
-  }
-  // "postCreateCommand": "bash -i scripts/install-dependencies.sh"
+  "updateRemoteUserUID": true
 }
-
