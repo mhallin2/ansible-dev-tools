@@ -17,9 +17,9 @@ pip install -r $WORKSPACE/scripts/requirements.txt
 pip install azure-cli==2.75
 curl -fSL https://github.com/Azure/azure-dev/releases/download/azure-dev-cli_1.22.3/azd-1.22.3-1.x86_64.rpm -o /tmp/azd-1.22.3-1.x86_64.rpm
 yum install -y /tmp/azd-1.22.3-1.x86_64.rpm
-azd auth login
-# az config set core.login_experience_v2=off
-# az login
+# azd auth login
+az config set core.login_experience_v2=off
+az login
 
 # Install/Configure user related settings and dependencies
 /bin/bash "$WORKSPACE/scripts/configure-git.sh"
