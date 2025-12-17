@@ -33,13 +33,13 @@ if [ "--publish" == "${1:-}" ]; then
         echo "Please also pass the tag to be published for the merged image. Source image will use the sha tag."
         exit 1
     fi
-    set +x # Disable echo for lines with GITHUB_TOKEN
+
+    set +x  # Disable echo for lines with GITHUB_TOKEN
     if [ -n "${GITHUB_TOKEN:-}" ] && [ -n "${GITHUB_ACTOR:-}" ]; then
         echo "${GITHUB_TOKEN:-}" | ${ADT_CONTAINER_ENGINE} login ghcr.io -u "${GITHUB_ACTOR:-}" --password-stdin
     fi
     set -x
     if [ -z "${GITHUB_SHA:-}" ]; then
-
         echo "Unable to find GITHUB_SHA variable."
         exit 1
     fi
@@ -86,7 +86,7 @@ if [[ -n "${GITHUB_SHA:-}" && "${GITHUB_EVENT_NAME:-}" != "pull_request" ]]; the
     FQ_IMAGE_NAME="ghcr.io/ansible/community-ansible-dev-tools-tmp:${GITHUB_SHA}-$ARCH"
     $ADT_CONTAINER_ENGINE tag $IMAGE_NAME "${FQ_IMAGE_NAME}"
     # https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
-    set +x # Disable echo for lines with GITHUB_TOKEN
+    set +x  # Disable echo for lines with GITHUB_TOKEN
     if [[ -n "${GITHUB_TOKEN:-}" ]]; then
         echo "$GITHUB_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
     fi
