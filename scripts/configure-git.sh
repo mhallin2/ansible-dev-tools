@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # # Configure git
-# git config --global user.name mhallin2
-# git config --global user.email knolfal1@volvocars.com
+git config --global user.name mhallin2
+git config --global user.email mhallin2@volvocars.com
 # mkdir -p /workspaces/github/mhallin2
 # mkdir -p /workspaces/github/volvo-cars
 # git clone https://github.com/mhallin2/Hosting-Ansible-Playbooks /workspaces/github/mhallin2/Hosting-Ansible-Playbooks
