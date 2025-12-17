@@ -35,12 +35,12 @@ fi
 
 # Configure git with user-specific settings
 echo "🔧 Configuring git for user: $GIT_USERNAME"
-git config --global user.name "$GIT_USERNAME"
-git config --global user.email "$GIT_EMAIL"
+git config --global user.name mhallin2
+git config --global user.email "mhallin2@volvocars.com"
 
 # Create workspace directories
 echo "📁 Creating workspace directories..."
-mkdir -p "$WORKSPACE_BASE/$GITHUB_USER"
+#mkdir -p "$WORKSPACE_BASE/$GITHUB_USER"
 # mkdir -p "$WORKSPACE_BASE/volvo-cars"
 
 # Function to clone repository with error handling

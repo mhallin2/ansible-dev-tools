@@ -8,16 +8,17 @@ echo "🔄 Updating system and installing dependencies..."
 dnf install $(cat $WORKSPACE/bindep.txt) -y
 
 # Install Ansible Collections and Python packages
-ansible-galaxy collection install azure.azcollection
+ansible-galaxy collection install azure.azcollection==3.12.0
 pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt --no-input
 pip install -r $WORKSPACE/scripts/requirements.txt
 
 # Install Azure CLI via pip to get the latest version
 #pip install azure-cli --upgrade
-curl -fsSL https://aka.ms/install-azd.sh | bash
-# azd auth login
-az config set core.login_experience_v2=off
-az login
+curl -fSL https://github.com/Azure/azure-dev/releases/download/azure-dev-cli_1.22.3/azd-1.22.3-1.x86_64.rpm -o azd-1.22.3-1.x86_64.rpm
+yum install -y azd-1.22.3-1.x86_64.rpm
+azd auth login
+# az config set core.login_experience_v2=off
+# az login
 
 # Install/Configure user related settings and dependencies
 /bin/bash "$WORKSPACE/scripts/configure-git.sh"
