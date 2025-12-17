@@ -8,7 +8,7 @@ echo "🔄 Updating system and installing dependencies..."
 dnf install $(cat $WORKSPACE/bindep.txt) -y
 
 # Install Ansible Collections and Python packages
-ansible-galaxy collection install azure.azcollection==3.12.0 --collection-path /usr/share/ansible/collections/ansible_collections
+ansible-galaxy collection install azure.azcollection==3.12.0 --collections-path /usr/share/ansible/collections/ansible_collections
 pip3 install -r /usr/share/ansible/collections/ansible_collections/azure/azcollection/requirements.txt --no-input
 pip install -r $WORKSPACE/scripts/requirements.txt
 
