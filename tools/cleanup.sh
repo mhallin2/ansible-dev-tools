@@ -8,4 +8,4 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 else
     # GNU sed
     sed -i'' '/GITHUB_TOKEN/d' .tox/*/log/*.log
-fii
+fi
