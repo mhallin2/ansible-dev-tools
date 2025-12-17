@@ -14,8 +14,8 @@ pip install -r $WORKSPACE/scripts/requirements.txt
 
 # Install Azure CLI via pip to get the latest version
 #pip install azure-cli --upgrade
-curl -fSL https://github.com/Azure/azure-dev/releases/download/azure-dev-cli_1.22.3/azd-1.22.3-1.x86_64.rpm -o azd-1.22.3-1.x86_64.rpm
-yum install -y azd-1.22.3-1.x86_64.rpm
+curl -fSL https://github.com/Azure/azure-dev/releases/download/azure-dev-cli_1.22.3/azd-1.22.3-1.x86_64.rpm -o /tmp/azd-1.22.3-1.x86_64.rpm
+yum install -y /tmp/azd-1.22.3-1.x86_64.rpm
 azd auth login
 # az config set core.login_experience_v2=off
 # az login
