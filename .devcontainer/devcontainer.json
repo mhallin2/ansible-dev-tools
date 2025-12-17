@@ -8,9 +8,9 @@
     "/dev/fuse",
     "--hostname=ansible-dev-container"
   ],
-  "mounts": [
-    "source=C:\\Workspace\\github\\localtests,target=/workspaces/github/mhallin2/Hosting-Ansible-Playbooks/.localtests,type=bind,consistency=consistent"
-  ],
+  // "mounts": [
+  //   "source=C:\\Workspace\\github\\localtests,target=/workspaces/github/mhallin2/Hosting-Ansible-Playbooks/.localtests,type=bind,consistency=consistent"
+  // ],
   "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
@@ -76,7 +76,7 @@
       ]
 
     }
-  },
-  "postCreateCommand": "bash -i scripts/install-dependencies.sh"
+  }
+  // "postCreateCommand": "bash -i scripts/install-dependencies.sh"
 }
 
