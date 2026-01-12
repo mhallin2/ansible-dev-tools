@@ -39,7 +39,9 @@
 		],
 		"cSpell.words": [
 			"Automations",
+			"azurefiles",
 			"cifs",
+			"fstype",
 			"osgpo",
 			"PKGM",
 			"replacepkgs"
