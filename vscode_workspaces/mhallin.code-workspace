@@ -42,9 +42,11 @@
 			"azurefiles",
 			"cifs",
 			"fstype",
+			"linuxbinaries",
 			"osgpo",
 			"PKGM",
-			"replacepkgs"
+			"replacepkgs",
+			"volvor"
 		],
 		"cSpell.customDictionaries": {
 			"custom-dictionary-workspace": {
