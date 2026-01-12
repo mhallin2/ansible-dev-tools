@@ -19,6 +19,18 @@
 		{
 			"name": "ansible-dev-tools",
 			"path": ".."
+		},
+		{
+			"name": "Hosting-Ansible-Collections (VolvoCars)",
+			"path": "../../github/volvo-cars/Hosting-Ansible-Collections"
+		},
+		{
+			"path": "../../github/volvo-cars/Hosting-Ansible-Playbooks",
+			"name": "Hosting-Ansible-Playbooks (VolvoCars)"
+		},
+		{
+			"path": "../../github/volvo-cars/Hosting-Database-Playbooks",
+			"name": "Hosting-Database-Playbooks (VolvoCars)"
 		}
 	],
 	"settings": {
