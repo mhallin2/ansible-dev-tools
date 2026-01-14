@@ -43,6 +43,7 @@
 			"cifs",
 			"fstype",
 			"linuxbinaries",
+			"noninteractive",
 			"osgpo",
 			"PKGM",
 			"replacepkgs",
