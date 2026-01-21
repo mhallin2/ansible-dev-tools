@@ -17,6 +17,10 @@
 			"path": "../../github/mhallin2/Hosting-Database-Playbooks"
 		},
 		{
+			"name": "Hosting-Network-Playbooks",
+			"path": "../../github/mhallin2/Hosting-Network-Playbooks"
+		},
+		{
 			"name": "ansible-dev-tools",
 			"path": ".."
 		},
@@ -25,12 +29,12 @@
 			"path": "../../github/volvo-cars/Hosting-Ansible-Collections"
 		},
 		{
-			"path": "../../github/volvo-cars/Hosting-Ansible-Playbooks",
-			"name": "Hosting-Ansible-Playbooks (VolvoCars)"
+			"name": "Hosting-Ansible-Playbooks (VolvoCars)",
+			"path": "../../github/volvo-cars/Hosting-Ansible-Playbooks"
 		},
 		{
-			"path": "../../github/volvo-cars/Hosting-Database-Playbooks",
-			"name": "Hosting-Database-Playbooks (VolvoCars)"
+			"name": "Hosting-Database-Playbooks (VolvoCars)",
+			"path": "../../github/volvo-cars/Hosting-Database-Playbooks"
 		}
 	],
 	"settings": {
