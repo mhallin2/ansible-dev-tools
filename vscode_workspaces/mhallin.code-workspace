@@ -50,9 +50,11 @@
 			"Hallengrens",
 			"linuxbinaries",
 			"noninteractive",
+			"notin",
 			"osgpo",
 			"PKGM",
 			"replacepkgs",
+			"SQLSERVERAGENT",
 			"volvor7"
 		],
 		"cSpell.customDictionaries": {
