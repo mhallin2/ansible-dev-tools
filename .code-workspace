@@ -1,0 +1,136 @@
+{
+	"folders": [
+		{
+			"name": "Hosting-Ansible-Collections",
+			"path": "../../github/mhallin2/Hosting-Ansible-Collections"
+		},
+		{
+			"name": "Hosting-Ansible-Playbooks",
+			"path": "../../github/mhallin2/Hosting-Ansible-Playbooks"
+		},
+		{
+			"name": "Hosting-Ansible-EE",
+			"path": "../../github/mhallin2/Hosting-Ansible-EE"
+		},
+		{
+			"name": "Hosting-Database-Playbooks",
+			"path": "../../github/mhallin2/Hosting-Database-Playbooks"
+		},
+		{
+			"name": "Hosting-Network-Playbooks",
+			"path": "../../github/mhallin2/Hosting-Network-Playbooks"
+		},
+		{
+			"name": "ansible-dev-tools",
+			"path": ".."
+		},
+		{
+			"name": "Hosting-Ansible-Collections (VolvoCars)",
+			"path": "../../github/volvo-cars/Hosting-Ansible-Collections"
+		},
+		{
+			"name": "Hosting-Ansible-Playbooks (VolvoCars)",
+			"path": "../../github/volvo-cars/Hosting-Ansible-Playbooks"
+		},
+		{
+			"name": "Hosting-Database-Playbooks (VolvoCars)",
+			"path": "../../github/volvo-cars/Hosting-Database-Playbooks"
+		}
+	],
+	"settings": {
+		"githubPullRequests.ignoredPullRequestBranches": [
+			"staging"
+		],
+		"cSpell.words": [
+			"Automations",
+			"azurefiles",
+			"cifs",
+			"clostrc",
+			"fstype",
+			"Hallengrens",
+			"linuxbinaries",
+			"noninteractive",
+			"notin",
+			"osgpo",
+			"PKGM",
+			"replacepkgs",
+			"SQLSERVERAGENT",
+			"volvor7"
+		],
+		"cSpell.customDictionaries": {
+			"custom-dictionary-workspace": {
+				"name": "custom-dictionary-workspace",
+				"path": "${workspaceFolder:Hosting-Ansible-Collections}/.cspell/custom-dictionary-workspace.txt",
+				"addWords": true,
+				"scope": "workspace"
+			}
+		},
+		"ansible.python.interpreterPath": "/usr/bin/python",
+		"pylint.path": [
+			"/root/.ansible/collections/"
+		],
+		"python.analysis.extraPaths": [
+			"/root/.ansible/collections/"
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"apsislabs.mergetool-navigator",
+			"bierner.github-markdown-preview",
+			"bierner.markdown-checkbox",
+			"bierner.markdown-emoji",
+			"bierner.markdown-footnotes",
+			"bierner.markdown-mermaid",
+			"bierner.markdown-preview-github-styles",
+			"charliermarsh.ruff",
+			"chouzz.vscode-better-align",
+			"DavidAnson.vscode-markdownlint",
+			"dionmunk.vscode-notes",
+			"donjayamanne.githistory",
+			"dzhavat.bracket-pair-toggler",
+			"eamodio.gitlens",
+			"erichbehrens.pull-request-monitor",
+			"esbenp.prettier-vscode",
+			"foam-vscode.foam-vscode",
+			"formulahendry.code-runner",
+			"freakypie.code-python-isort",
+			"GitHub.codespaces",
+			"GitHub.copilot",
+			"GitHub.remotehub",
+			"github.vscode-github-actions",
+			"gruntfuggly.todo-tree",
+			"gruntfuggly.triggertaskonsave",
+			"IkBenGeenRobot.ansible-variable-lookup",
+			"jakob101.relativepath",
+			"kortina.vscode-markdown-notes",
+			"markis.code-coverage",
+			"mechatroner.rainbow-csv",
+			"mhutchie.git-graph",
+			"migueltarga.ssh-control",
+			"mikoz.black-py",
+			"ms-python.black-formatter",
+			"ms-python.debugpy",
+			"ms-python.isort",
+			"ms-python.mypy-type-checker",
+			"ms-python.pylint",
+			"ms-python.python",
+			"oderwat.indent-rainbow",
+			"rangav.vscode-thunder-client",
+			"redhat.ansible",
+			"shd101wyy.markdown-preview-enhanced",
+			"shyykoserhiy.git-autoconfig",
+			"streetsidesoftware.code-spell-checker",
+			"tchayen.markdown-links",
+			"tht13.rst-vscode",
+			"timonwong.shellcheck",
+			"tomblind.scm-buttons-vscode",
+			"trond-snekvik.simple-rst",
+			"ue.alphabetical-sorter",
+			"unjinjang.rest-api-client",
+			"valentjn.vscode-ltex",
+			"waderyan.gitblame",
+			"yzhang.markdown-all-in-one"
+
+		]
+	}
+}
