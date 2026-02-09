@@ -35,6 +35,10 @@
 		{
 			"name": "Hosting-Database-Playbooks (VolvoCars)",
 			"path": "../../github/volvo-cars/Hosting-Database-Playbooks"
+		},
+		{
+			"name": "ocp-devspaces",
+			"path": "../../github/mhallin2/ocp-devspaces"
 		}
 	],
 	"settings": {
