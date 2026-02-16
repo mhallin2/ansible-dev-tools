@@ -43,7 +43,8 @@
 	],
 	"settings": {
 		"githubPullRequests.ignoredPullRequestBranches": [
-			"staging"
+			"staging",
+			"Dev"
 		],
 		"cSpell.words": [
 			"Automations",
