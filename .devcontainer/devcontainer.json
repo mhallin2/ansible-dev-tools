@@ -2,7 +2,10 @@
   "containerUser": "root",
   "customizations": {
     "vscode": {
-      "extensions": ["redhat.ansible"]
+      "extensions": [
+        "redhat.ansible",
+        "GitHub.copilot-chat"
+      ]
     }
   },
   "image": "ghcr.io/ansible/community-ansible-dev-tools:latest",
