@@ -1,6 +1,6 @@
 schemaVersion: 2.2.2
 metadata:
-  name: ansible-demo
+  name: ansible-vcc-devspace
 components:
   - name: tooling-container
     container:
