@@ -3,17 +3,17 @@
 # # Configure git
 git config --global user.name mhallin2
 git config --global user.email mhallin2@volvocars.com
-# mkdir -p /workspaces/github/mhallin2
+# mkdir -p /workspaces/github/volvo-cars/Hosting-Azure-Functions
 # mkdir -p /workspaces/github/volvo-cars
-# git clone https://github.com/mhallin2/Hosting-Ansible-Playbooks /workspaces/github/mhallin2/Hosting-Ansible-Playbooks
-# git clone https://github.com/mhallin2/Hosting-Ansible-Collections /workspaces/github/mhallin2/Hosting-Ansible-Collections
+# git clone https://github.com/mhallin2/Hosting-Ansible-Playbooks /workspaces/github/volvo-cars/Hosting-Azure-Functions/Hosting-Ansible-Playbooks
+# git clone https://github.com/mhallin2/Hosting-Ansible-Collections /workspaces/github/volvo-cars/Hosting-Azure-Functions/Hosting-Ansible-Collections
 # git clone https://github.com/volvo-cars/Hosting-Database-Playbooks /workspaces/github/volvo-cars/Hosting-Database-Playbooks
 # git clone https://github.com/volvo-cars/Hosting-Ansible-Actions /workspaces/github/volvo-cars/Hosting-Ansible-Actions
 # git clone https://github.com/volvo-cars/Hosting-Ansible-TestArea /workspaces/github/volvo-cars/Hosting-Ansible-TestArea
 # git clone https://github.com/volvo-cars/Hosting-Ansible-DummyRepo /workspaces/github/volvo-cars/Hosting-Ansible-DummyRepo
 # /bin/bash "/workspaces/ansible-dev-tools/scripts/update-ansible-config.sh"
-# ansible-galaxy collection install -r /workspaces/github/mhallin2/Hosting-Ansible-Playbooks/requirements.yml
-# ansible-galaxy collection install /workspaces/github/mhallin2/Hosting-Ansible-Playbooks/collections/hosting_internal
+# ansible-galaxy collection install -r /workspaces/github/volvo-cars/Hosting-Azure-Functions/Hosting-Ansible-Playbooks/requirements.yml
+# ansible-galaxy collection install /workspaces/github/volvo-cars/Hosting-Azure-Functions/Hosting-Ansible-Playbooks/collections/hosting_internal
 # pip install -r ~/.ansible/collections/ansible_collections/vmware/vmware/requirements.txt --no-input
 
 
@@ -69,8 +69,8 @@ clone_repository() {
 echo "📥 Cloning personal repositories for $GITHUB_USER..."
 clone_repository "https://github.com/$GITHUB_USER/Hosting-Ansible-Playbooks" "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-Playbooks"
 clone_repository "https://github.com/$GITHUB_USER/Hosting-Ansible-Collections" "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-Collections"
-# git clone https://github.com/mhallin2/Hosting-Ansible-Playbooks /workspaces/github/mhallin2/Hosting-Ansible-Playbooks
-# git clone https://github.com/mhallin2/Hosting-Ansible-Collections /workspaces/github/mhallin2/Hosting-Ansible-Collections
+# git clone https://github.com/mhallin2/Hosting-Ansible-Playbooks /workspaces/github/volvo-cars/Hosting-Azure-Functions/Hosting-Ansible-Playbooks
+# git clone https://github.com/mhallin2/Hosting-Ansible-Collections /workspaces/github/volvo-cars/Hosting-Azure-Functions/Hosting-Ansible-Collections
 clone_repository "https://github.com/$GITHUB_USER/Hosting-Database-Playbooks" "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Database-Playbooks"
 clone_repository "https://github.com/$GITHUB_USER/Hosting-Ansible-EE" "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Ansible-EE"
 clone_repository "https://github.com/$GITHUB_USER/Hosting-Network-Playbooks" "$WORKSPACE_BASE/$GITHUB_USER/Hosting-Network-Playbooks"
