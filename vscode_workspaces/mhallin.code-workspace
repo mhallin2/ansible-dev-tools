@@ -37,7 +37,7 @@
 			"path": "../../github/volvo-cars/Hosting-Database-Playbooks"
 		},
 		{
-			"name": "Hosting-Azure-Functions (VolvoCars)",
+			"name": "Hosting-Azure-Functions_VolvoCars",
 			"path": "../../github/volvo-cars/Hosting-Azure-Functions"
 		}
 	],
