@@ -27,6 +27,7 @@ mypy
 pytest
 pgpy
 types-PyYAML
+pydoclint
 
 # ## community.general.mssql_script dependency ##
 pymssql
