@@ -434,16 +434,6 @@ required-imports = ["from __future__ import annotations"]
 convention = "google"
 
 [tool.setuptools_scm]
-# To prevent accidental pick of mobile version tags such 'v6'
-git_describe_command = [
-  "git",
-  "describe",
-  "--dirty",
-  "--long",
-  "--tags",
-  "--match",
-  "v*.*"
-]
 local_scheme = "no-local-version"
 version_file = "src/ansible_dev_tools/_version.py"
 
