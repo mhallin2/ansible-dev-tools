@@ -77,7 +77,10 @@
 		],
 		"python.analysis.extraPaths": [
 			"/root/.ansible/collections/"
-		]
+		],
+		"chat.tools.terminal.autoApprove": {
+			"ansible-lint": true
+		}
 	},
 	"extensions": {
 		"recommendations": [
