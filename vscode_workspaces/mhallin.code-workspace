@@ -79,7 +79,8 @@
 			"/root/.ansible/collections/"
 		],
 		"chat.tools.terminal.autoApprove": {
-			"ansible-lint": true
+			"ansible-lint": true,
+			"ansible-doc": true
 		}
 	},
 	"extensions": {
