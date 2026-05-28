@@ -82,7 +82,9 @@
 			"ansible-lint": true,
 			"ansible-doc": true
 		},
-		"gitblame.inlineMessageEnabled": true
+		"gitblame.inlineMessageEnabled": true,
+		"gitblame.delayBlame": 100,
+		"gitblame.inlineMessageFormat": "${author.name} (${time.ago})"
 	},
 	"extensions": {
 		"recommendations": [

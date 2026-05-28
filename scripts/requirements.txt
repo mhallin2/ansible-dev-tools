@@ -28,6 +28,7 @@ pytest
 pgpy
 types-PyYAML
 pydoclint
+ripgrep
 
 # ## community.general.mssql_script dependency ##
 pymssql
