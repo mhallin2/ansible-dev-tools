@@ -81,7 +81,8 @@
 		"chat.tools.terminal.autoApprove": {
 			"ansible-lint": true,
 			"ansible-doc": true
-		}
+		},
+		"gitblame.inlineMessageEnabled": true
 	},
 	"extensions": {
 		"recommendations": [
