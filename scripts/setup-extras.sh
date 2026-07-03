@@ -2,7 +2,7 @@
 
 # Install required packages
 echo "Installing packages: podman, podman-docker, wget, bind-utils..."
-dnf -y install podman podman-docker wget bind-utils ping || true
+dnf -y install podman podman-docker wget bind-utils ping dpkg ripgrep || true
 echo "✅ Extra packages has been installed successfully!"
 
 # Create MyNotes workspace structure ( for creating notes directly within VS Code)
