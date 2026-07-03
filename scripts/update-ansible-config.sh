@@ -11,7 +11,7 @@ readonly Config_File_Source_Path="/workspaces/ansible-dev-tools/scripts/ansible.
 readonly Config_File_Destination_Path="/etc/ansible/ansible.cfg"
 readonly Keyvault_Name="kv-weu-wintel-prod"
 readonly Secret_Name="APIkey-Private-AAP-HUB"
-readonly Secret_Version="e2670c3195d44982a1a1609a7f8d8c8a"
+readonly Secret_Version="af56424f4d8d407bb4a4f56780601e78"
 readonly Token_Placeholder="Hub_Token"
 
 # Color codes for output
@@ -84,6 +84,16 @@ update_ansible_config() {
     # Replace token placeholder with actual token
     print_status "$GREEN" "✅ Starting update of ansible.cfg with AAP Hub token"
     sed -e "s/$Token_Placeholder/$AAP_Hub_Token/;w $Config_File_Destination_Path" "$Config_File_Source_Path"
+    print_status "$YELLOW" "📝 Updating ansible.cfg with AAP Hub token..."
+    # if sed -i "s/Hub_Token/$AAP_Hub_Token/g" "$Config_File_Source_Path"; then
+    #     print_status "$GREEN" "✅ Successfully updated ansible.cfg with AAP Hub token"
+    # else
+    #     print_status "$RED" "❌ Failed to update ansible.cfg"
+    #     # Restore backup
+    #     cp "$backup_file" "$Config_File_Source_Path"
+    #     print_status "$YELLOW" "🔄 Restored original configuration from backup"
+    #     exit 1
+    # fi
 }
 
 # Function to verify the update
