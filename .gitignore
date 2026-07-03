@@ -1,5 +1,5 @@
 /src/ansible_dev_tools/_version.py
-
+scripts/ansible.cfg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
