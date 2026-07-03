@@ -20,10 +20,7 @@
 			"name": "ansible-dev-tools",
 			"path": ".."
 		},
-		{
-			"name": "Hosting-Azure-Functions_VolvoCars",
-			"path": "/home/runner/github/volvo-cars/Hosting-Azure-Functions"
-		},
+
 		{
 			"name": "Hosting-NonCompliant-Playbooks",
 			"path": "/home/runner/github/volvo-cars/Hosting-NonCompliant-Playbooks"
