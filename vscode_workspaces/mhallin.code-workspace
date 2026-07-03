@@ -2,19 +2,19 @@
 	"folders": [
 		{
 			"name": "Hosting-Ansible-Collections",
-			"path": "../../github/mhallin2/Hosting-Ansible-Collections"
+			"path": "/home/runner/github/mhallin2/Hosting-Ansible-Collections"
 		},
 		{
 			"name": "Hosting-Ansible-Playbooks",
-			"path": "../../github/mhallin2/Hosting-Ansible-Playbooks"
+			"path": "/home/runner/github/mhallin2/Hosting-Ansible-Playbooks"
 		},
 		{
 			"name": "Hosting-Ansible-EE",
-			"path": "../../github/mhallin2/Hosting-Ansible-EE"
+			"path": "/home/runner/github/mhallin2/Hosting-Ansible-EE"
 		},
 		{
 			"name": "Hosting-Database-Playbooks",
-			"path": "../../github/mhallin2/Hosting-Database-Playbooks"
+			"path": "/home/runner/github/mhallin2/Hosting-Database-Playbooks"
 		},
 		{
 			"name": "ansible-dev-tools",
@@ -22,11 +22,11 @@
 		},
 		{
 			"name": "Hosting-Azure-Functions_VolvoCars",
-			"path": "../../github/volvo-cars/Hosting-Azure-Functions"
+			"path": "/home/runner/github/volvo-cars/Hosting-Azure-Functions"
 		},
 		{
 			"name": "Hosting-NonCompliant-Playbooks",
-			"path": "../../github/volvo-cars/Hosting-NonCompliant-Playbooks"
+			"path": "/home/runner/github/volvo-cars/Hosting-NonCompliant-Playbooks"
 		}
 	],
 	"settings": {
@@ -73,64 +73,5 @@
 		"gitblame.inlineMessageEnabled": true,
 		"gitblame.delayBlame": 100,
 		"gitblame.inlineMessageFormat": "${author.name} (${time.ago})"
-	},
-	"extensions": {
-		"recommendations": [
-			"apsislabs.mergetool-navigator",
-			"bierner.github-markdown-preview",
-			"bierner.markdown-checkbox",
-			"bierner.markdown-emoji",
-			"bierner.markdown-footnotes",
-			"bierner.markdown-mermaid",
-			"bierner.markdown-preview-github-styles",
-			"charliermarsh.ruff",
-			"chouzz.vscode-better-align",
-			"DavidAnson.vscode-markdownlint",
-			"dionmunk.vscode-notes",
-			"donjayamanne.githistory",
-			"dzhavat.bracket-pair-toggler",
-			"eamodio.gitlens",
-			"erichbehrens.pull-request-monitor",
-			"esbenp.prettier-vscode",
-			"foam-vscode.foam-vscode",
-			"formulahendry.code-runner",
-			"freakypie.code-python-isort",
-			"GitHub.codespaces",
-			"GitHub.remotehub",
-			"github.vscode-github-actions",
-			"gruntfuggly.todo-tree",
-			"gruntfuggly.triggertaskonsave",
-			"IkBenGeenRobot.ansible-variable-lookup",
-			"jakob101.relativepath",
-			"kortina.vscode-markdown-notes",
-			"markis.code-coverage",
-			"mechatroner.rainbow-csv",
-			"mhutchie.git-graph",
-			"migueltarga.ssh-control",
-			"mikoz.black-py",
-			"ms-python.black-formatter",
-			"ms-python.debugpy",
-			"ms-python.isort",
-			"ms-python.mypy-type-checker",
-			"ms-python.pylint",
-			"ms-python.python",
-			"oderwat.indent-rainbow",
-			"rangav.vscode-thunder-client",
-			"redhat.ansible",
-			"shd101wyy.markdown-preview-enhanced",
-			"shyykoserhiy.git-autoconfig",
-			"streetsidesoftware.code-spell-checker",
-			"tchayen.markdown-links",
-			"tht13.rst-vscode",
-			"timonwong.shellcheck",
-			"tomblind.scm-buttons-vscode",
-			"trond-snekvik.simple-rst",
-			"ue.alphabetical-sorter",
-			"unjinjang.rest-api-client",
-			"valentjn.vscode-ltex",
-			"waderyan.gitblame",
-			"yzhang.markdown-all-in-one"
-
-		]
 	}
 }
