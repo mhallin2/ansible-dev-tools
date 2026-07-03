@@ -19,7 +19,7 @@
   "mounts": [
     "source=${localEnv:HOME}/workspace/github,target=/home/runner/github,type=bind,Z"
   ],
-  "postCreateCommand": "bash /workspaces/ansible-dev-tools/scripts/configure-git.sh",
+  "postCreateCommand": "bash /workspaces/ansible-dev-tools/scripts/install-dependencies.sh",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -31,6 +31,7 @@
         "bierner.markdown-footnotes",
         "bierner.markdown-mermaid",
         "bierner.markdown-preview-github-styles",
+        "biomejs.biome",
         "charliermarsh.ruff",
         "chouzz.vscode-better-align",
         "DavidAnson.vscode-markdownlint",

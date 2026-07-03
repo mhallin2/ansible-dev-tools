@@ -24,5 +24,4 @@ az login
 # Install/Configure user related settings and dependencies
 /bin/bash "$WORKSPACE/scripts/configure-git.sh"
 /bin/bash "$WORKSPACE/scripts/setup-extras.sh"
-/bin/bash "$WORKSPACE/scripts/update-ansible-config.sh"
 echo "✅ All dependencies have been installed and configured successfully!"
