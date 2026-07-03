@@ -1,5 +1,6 @@
 {
   "containerUser": "root",
+  "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
       "extensions": ["redhat.ansible"]
@@ -12,17 +13,16 @@
     "--cap-add=NET_ADMIN",
     "--cap-add=SYS_ADMIN",
     "--cap-add=SYS_RESOURCE",
-    "--device",
-    "/dev/fuse",
-    "--security-opt",
-    "seccomp=unconfined",
-    "--security-opt",
-    "label=disable",
-    "--security-opt",
-    "apparmor=unconfined",
-    "--security-opt",
-    "unmask=/sys/fs/cgroup",
+    "--device=/dev/fuse",
+    "--security-opt=seccomp=unconfined",
+    "--security-opt=label=disable",
+    "--security-opt=apparmor=unconfined",
+    "--security-opt=unmask=/sys/fs/cgroup",
     "--userns=host",
     "--hostname=ansible-dev-container"
-  ]
+  ],
+  "mounts": [
+    "source=${localEnv:HOME}/workspace/github,target=/home/runner/github,type=bind,Z"
+  ],
+  "postCreateCommand": "bash /workspaces/ansible-dev-tools/scripts/configure-git.sh"
 }

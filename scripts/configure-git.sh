@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # # Configure git
+cp /workspaces/ansible-dev-tools/scripts/resolv.conf /etc/resolv.conf
 git config --global user.name mhallin2
 git config --global user.email mhallin2@volvocars.com
 # mkdir -p /workspaces/github/volvo-cars/Hosting-Azure-Functions
@@ -24,7 +25,7 @@ git config --global user.email mhallin2@volvocars.com
 GIT_USERNAME="${GIT_USERNAME:-mhallin2}"
 GIT_EMAIL="${GIT_EMAIL:-mhallin2@volvocars.com}"
 GITHUB_USER="${GITHUB_USER:-${GIT_USERNAME}}"
-WORKSPACE_BASE="${WORKSPACE_BASE:-/workspaces/github/}"
+WORKSPACE_BASE="${WORKSPACE_BASE:-/home/runner/github/}"
 
 # Validate required variables
 if [[ -z "$GIT_USERNAME" || -z "$GIT_EMAIL" ]]; then
@@ -35,8 +36,8 @@ fi
 
 # Configure git with user-specific settings
 echo "🔧 Configuring git for user: $GIT_USERNAME"
-git config --global user.name mhallin2
-git config --global user.email "mhallin2@volvocars.com"
+git config --global user.name "$GIT_USERNAME"
+git config --global user.email "$GIT_EMAIL"
 
 # Create workspace directories
 echo "📁 Creating workspace directories..."
