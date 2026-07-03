@@ -21,10 +21,6 @@
 			"path": ".."
 		},
 
-		{
-			"name": "Hosting-NonCompliant-Playbooks",
-			"path": "/home/runner/github/volvo-cars/Hosting-NonCompliant-Playbooks"
-		}
 	],
 	"settings": {
 		"githubPullRequests.ignoredPullRequestBranches": [

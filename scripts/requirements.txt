@@ -24,6 +24,7 @@ ansible-lint
 pylint
 black
 mypy
+pylance
 pytest
 pgpy
 types-PyYAML

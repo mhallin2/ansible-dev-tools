@@ -22,6 +22,6 @@ az config set core.login_experience_v2=off
 az login
 
 # Install/Configure user related settings and dependencies
-/bin/bash "$WORKSPACE/scripts/configure-git.sh"
 /bin/bash "$WORKSPACE/scripts/setup-extras.sh"
+/bin/bash "$WORKSPACE/scripts/configure-git.sh"
 echo "✅ All dependencies have been installed and configured successfully!"
