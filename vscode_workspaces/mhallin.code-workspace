@@ -66,6 +66,7 @@
 		"gitblame.inlineMessageEnabled": true,
 		"gitblame.delayBlame": 100,
 		"gitblame.inlineMessageFormat": "${author.name} (${time.ago})",
-		"todo-tree.ripgrep.ripgrep": "/usr/bin/rg"
+		"todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
+		"files.eol": "auto"
 	}
 }
