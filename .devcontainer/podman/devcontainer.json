@@ -17,7 +17,8 @@
     "--hostname=ansible-dev-container"
   ],
   "mounts": [
-    "source=${localEnv:HOME}/workspace/github,target=/home/runner/github,type=bind,Z"
+    "source=${localEnv:HOME}/workspace/github,target=/home/runner/github,type=bind,Z",
+    "source=/Users/MHALLIN2/Documents/VS_Code_Notes,target=/home/runner/notes,type=bind,Z"
   ],
   "postCreateCommand": "bash /workspaces/ansible-dev-tools/scripts/install-dependencies.sh",
   "customizations": {

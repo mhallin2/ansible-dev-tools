@@ -13,14 +13,12 @@
 			"path": "/home/runner/github/mhallin2/Hosting-Ansible-EE"
 		},
 		{
-			"name": "Hosting-Database-Playbooks",
-			"path": "/home/runner/github/mhallin2/Hosting-Database-Playbooks"
-		},
-		{
 			"name": "ansible-dev-tools",
 			"path": ".."
 		},
-
+		{
+			"path": "../../../home/runner/github/mhallin2/Hosting-Database-Playbooks"
+		}
 	],
 	"settings": {
 		"githubPullRequests.ignoredPullRequestBranches": [
