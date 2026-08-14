@@ -9,12 +9,12 @@ yum upgrade -y
 yum install $(cat $WORKSPACE/bindep.txt) -y
 
 # Install Ansible Collections and Python packages
-ansible-galaxy collection install azure.azcollection==3.12.0 --collections-path /root/.ansible/collections/ansible_collections/
+ansible-galaxy collection install azure.azcollection==3.16.0 --collections-path /root/.ansible/collections/ansible_collections/
 pip3 install -r /root/.ansible/collections/ansible_collections/azure/azcollection/requirements.txt --no-input
 pip install -r $WORKSPACE/scripts/requirements.txt
 
 # Install Azure CLI via pip to get the latest version
-pip install azure-cli==2.75
+pip install azure-cli==2.76
 curl -fsSL https://aka.ms/install-azd.sh | bash
 azd auth login
 az config set core.login_experience_v2=off

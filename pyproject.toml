@@ -126,7 +126,7 @@ strict = true
 
 [[tool.mypy.overrides]]
 ignore_missing_imports = true
-module = ["gunicorn.*", "openapi_core.*"]
+module = ["gunicorn.*", "openapi_core.*","pyodbc"]
 
 [tool.pydoclint]
 allow-init-docstring = true
