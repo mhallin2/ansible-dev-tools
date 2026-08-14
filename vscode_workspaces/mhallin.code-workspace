@@ -15,9 +15,6 @@
 		{
 			"name": "ansible-dev-tools",
 			"path": ".."
-		},
-		{
-			"path": "../../../home/runner/github/mhallin2/Hosting-Database-Playbooks"
 		}
 	],
 	"settings": {
