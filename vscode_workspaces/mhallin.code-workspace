@@ -22,14 +22,17 @@
 			"staging"
 		],
 		"cSpell.words": [
+			"activationkey",
 			"adleave",
 			"ampls",
 			"Automations",
+			"autoregistercap",
 			"azurefiles",
 			"Cardell",
 			"cifs",
 			"clostrc",
 			"fstype",
+			"getenforce",
 			"gitblame",
 			"Hallengrens",
 			"Isort",
@@ -41,6 +44,7 @@
 			"pydoclint",
 			"replacepkgs",
 			"Rickard",
+			"setenforce",
 			"SQLSERVERAGENT",
 			"volvor7"
 		],
