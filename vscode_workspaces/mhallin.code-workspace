@@ -19,10 +19,6 @@
 		{
 			"name": "Hosting-Ansible-TestArea",
 			"path": "../../../home/runner/github/volvo-cars/Hosting-Ansible-TestArea"
-		},
-		{
-			"name": "mb-common-finops",
-			"path": "../../github/volvo-cars/mb-common-finops"
 		}
 	],
 	"settings": {
