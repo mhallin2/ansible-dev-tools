@@ -15,6 +15,14 @@
 		{
 			"name": "ansible-dev-tools",
 			"path": ".."
+		},
+		{
+			"name": "Hosting-Ansible-TestArea",
+			"path": "../../../home/runner/github/volvo-cars/Hosting-Ansible-TestArea"
+		},
+		{
+			"name": "mb-common-finops",
+			"path": "../../github/volvo-cars/mb-common-finops"
 		}
 	],
 	"settings": {
@@ -31,18 +39,24 @@
 			"Cardell",
 			"cifs",
 			"clostrc",
+			"disablerepo",
+			"flexera",
 			"fstype",
 			"getenforce",
 			"gitblame",
 			"Hallengrens",
+			"horizontalscanning",
 			"Isort",
 			"linuxbinaries",
+			"NEWSAT",
 			"noninteractive",
 			"notin",
+			"openscap",
 			"osgpo",
 			"PKGM",
 			"pydoclint",
 			"replacepkgs",
+			"RHUI",
 			"Rickard",
 			"setenforce",
 			"SQLSERVERAGENT",
