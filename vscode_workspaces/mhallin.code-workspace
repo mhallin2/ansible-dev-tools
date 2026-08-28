@@ -36,6 +36,7 @@
 			"cifs",
 			"clostrc",
 			"disablerepo",
+			"finops",
 			"flexera",
 			"fstype",
 			"getenforce",
@@ -81,6 +82,7 @@
 		"gitblame.delayBlame": 100,
 		"gitblame.inlineMessageFormat": "${author.name} (${time.ago})",
 		"todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
-		"files.eol": "auto"
+		"files.eol": "auto",
+		"editor.defaultFormatter": "ms-python.black-formatter"
 	}
 }
