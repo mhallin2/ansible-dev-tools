@@ -18,7 +18,7 @@ pip install azure-cli==2.76
 curl -fsSL https://aka.ms/install-azd.sh | bash
 azd auth login
 az config set core.login_experience_v2=off
-az login
+# az login
 
 # Install/Configure user related settings and dependencies
 /bin/bash "$WORKSPACE/scripts/setup-extras.sh"
