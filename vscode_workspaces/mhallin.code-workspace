@@ -10,6 +10,9 @@
 		},
 		{
 			"path": ".."
+		},
+		{
+			"path": "../../../home/runner/github/mhallin2/Hosting-Database-Playbooks"
 		}
 	],
 	"settings": {
@@ -35,6 +38,7 @@
 			"gitblame",
 			"Hallengrens",
 			"horizontalscanning",
+			"ICTS",
 			"Isort",
 			"linuxbinaries",
 			"mdatp",
@@ -69,7 +73,10 @@
 		],
 		"chat.tools.terminal.autoApprove": {
 			"ansible-lint": true,
-			"ansible-doc": true
+			"ansible-doc": true,
+			"pylint": true,
+			"black": true,
+			"ansible": true
 		},
 		"gitblame.inlineMessageEnabled": true,
 		"gitblame.delayBlame": 100,
