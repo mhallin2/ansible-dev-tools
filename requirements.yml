@@ -25,8 +25,6 @@ collections:
     version: 3.0.0
   - name: dellemc.unity
     version: 2.0.0
-  - name: infoblox.nios_modules
-    version: 1.8.0
   - name: infra.aap_configuration
     version: 3.1.0
   - name: microsoft.ad

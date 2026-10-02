@@ -1,8 +1,5 @@
 # ## Azure dependency ##
 
-# ## infoblox dependency ##
-
-infoblox-client
 #iputils
 # ## community.general dependency ##
 ipaddress
