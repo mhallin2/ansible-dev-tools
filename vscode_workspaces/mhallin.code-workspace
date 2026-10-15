@@ -38,7 +38,6 @@
 			"gitblame",
 			"Hallengrens",
 			"horizontalscanning",
-			"PZWEU",
 			"Isort",
 			"linuxbinaries",
 			"mdatp",
@@ -49,6 +48,8 @@
 			"osgpo",
 			"PKGM",
 			"pydoclint",
+			"PZUS",
+			"PZSDC",
 			"replacepkgs",
 			"RHUI",
 			"Rickard",
@@ -76,7 +77,8 @@
 			"ansible-doc": true,
 			"pylint": true,
 			"black": true,
-			"ansible": true
+			"ansible": true,
+			"command": true
 		},
 		"gitblame.inlineMessageEnabled": true,
 		"gitblame.delayBlame": 100,
